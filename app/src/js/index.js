@@ -5,11 +5,12 @@ function testing() {
 }
 
 testing();
-var a = new about()
-console.log(about)
-a.setName('aruneshhello');
-a.getName();
-// a.getName();
+var a = about();
+// console.log(about)
+a.setName('arunesh');
+console.log(a.getName());
+// a.setName('aruneshhello'); a.getName(); a.getName();
+
 import Example from "./Example";
 
 var x = new Example();
