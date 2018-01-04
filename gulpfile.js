@@ -24,7 +24,7 @@ gulp.task('serve', [
     'sass', 'es6', 'html'
 ], function () {
 
-    browserSync.init({server: "./app/dist", open: false});
+    browserSync.init({server: "./app/dist", open: true});
 
     gulp.watch("app/src/css/*.scss", ['sass']);
     gulp
@@ -35,7 +35,7 @@ gulp.task('serve', [
 gulp.task('html', function () {
     return gulp
         .src("app/src/html/*.html")
-        .pipe(gulp.dest("app/dist/html"))
+        .pipe(gulp.dest("app/dist/"))
 })
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function () {

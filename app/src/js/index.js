@@ -1,7 +1,7 @@
 import {config} from './config.js';
 import about from './about';
 function testing() {
-    console.log('now this is working looksgood now', config);
+    console.log('now this is working looks good now', config);
 }
 
 testing();
